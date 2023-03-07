@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build and Test'){
             steps{
-                sh 'docker build . -t chinmayapradhan/todo-app:latest'
+                sh 'docker build . -t chinmayapradhan/nodo-todo-app:latest'
             }
         }
         stage('Push'){
