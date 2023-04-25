@@ -1,7 +1,11 @@
 version: '3.9'
 
 services:
-  web:
-    image: 'chinmayapradhan/todo-app:latest'
+ build: ./node-todo
+    # use nodemon rather than node for local dev
+    entrypoint: nodemon app.js
+     
+    volumes:
+      - ./node-todo:/app
     ports:
       - "8000:8000"
