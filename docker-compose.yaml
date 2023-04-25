@@ -1,7 +1,8 @@
 version: '3.9'
 
 services:
- build: ./node-todo
+ node-todo:
+    build: ./node-todo
     # use nodemon rather than node for local dev
     entrypoint: nodemon app.js
      
