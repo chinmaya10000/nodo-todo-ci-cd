@@ -1,12 +1,7 @@
 version: '3.9'
 
 services:
- node-todo:
-    build: ./node-todo
-    # use nodemon rather than node for local dev
-    entrypoint: nodemon app.js
-     
-    volumes:
-      - ./node-todo:/app
+  web:
+    image: trainwithshubham/node-todo-app-cicd:latest
     ports:
       - "8000:8000"
